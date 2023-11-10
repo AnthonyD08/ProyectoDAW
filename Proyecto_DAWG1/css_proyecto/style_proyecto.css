@@ -1,0 +1,565 @@
+.table1 {
+    display: table; 
+    margin:auto;
+}
+
+.mainTop {
+position: absolute;
+width: 91%;
+margin-left: 9%;
+}
+
+.izquierda {
+position: absolute;
+height: 100%;
+}
+
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.titulo {
+    background-color: #4775da;
+    height: 66px;   
+    display:flex; justify-content: left; width: 100%;
+}
+
+.titulo #ul{ 
+    display:flex; justify-content: right; width: 82.22%;
+    gap: 40px;
+}
+
+.botones_izquierda{
+    display:flex; justify-content: left; margin-left: 4%; margin-top: 5%;
+}
+
+#sjvive{
+    vertical-align: sub;
+    position: absolute;
+    margin-top: -130px;
+}
+
+
+#ul {
+    display: block;
+    margin-left: 346px;
+}
+#verde {
+    background-color: rgb(0, 128, 0);
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    width: 100px;
+    margin-right: -40px;
+    height: 55px;
+}
+#morado {
+    background-color: rgb(98, 0, 128);
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    width: 100px;
+    height: 55px;
+    margin-right: -40px;
+}
+#amarillo {
+    background-color: rgb(161, 151, 0);
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    width: 100px;
+    height: 55px;
+    margin-right: -40px;
+}
+#rojo {
+    background-color: rgb(161, 0, 0);
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    width: 100px;
+    height: 55px;
+    margin-right: 0px;
+}
+
+#user{
+    width: 33px;
+    height: 33px;
+    padding: 12px;
+    padding-left: 33px;
+}
+
+#logoimg{
+    width: 440px;
+    height: 80px;
+    padding: 0px;
+}
+
+#user:hover{
+    color: aliceblue;
+}
+
+/* Footer */
+
+.piedepagina{
+    background-color: #4775da;
+    margin-left: -8px;
+    width: 100%;
+    position: absolute;
+}
+
+.piedepagina img{
+    width: 220px;
+}
+
+.logofooter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+span{
+    font-size: 25px;
+}
+
+.facebook{
+    background: #3b5998;
+    padding: 8px;
+    border-radius:  90px;
+    color: white;
+}
+
+.instagram{
+    background: #c13584;
+    padding: 8px;
+    border-radius:  90px;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logotipo{
+    font-size: 18px;
+    color: white;
+}
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 45px;
+
+}
+
+.section div {
+    display: flex;
+    flex-direction: column;
+}
+
+div .h3footer {
+    color: rgb(255,230,235);
+    padding: 5px 0;
+
+}
+
+.derechos {
+    margin-top: 1%;
+}
+
+a{
+    color: rgb(255,230,235);
+    text-decoration: none;
+    padding: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    background: none;
+    border: solid 2px white;
+    padding: 10px 20px;
+}
+
+button{
+    padding: 10px 20px;
+    background: white;
+    color: rgb(125, 43, 226);
+    font-size: 18px;
+}
+
+.derechos{
+    position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #4747da;
+    color: rgb(255,230,235);
+}
+
+/* Galería */
+
+.contenedor {
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+}
+
+
+.contenedor a{
+    color: red;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+
+header {
+	padding: 25px;
+}
+
+header form {
+	width: 100%;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+header .barra-busqueda {
+	width: 20%;
+	height: 20px;
+    margin-top: -0.8%;
+    margin-left: 48.6%;
+	line-height: 40px;
+	background: #4775da;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 16px;
+    position: absolute;
+}
+
+header .categorias {
+	display: flex;
+	justify-content: center;
+    margin-top: -1.7%;
+    margin-left: 2%;
+    position: absolute;
+}
+
+header .categorias a {
+	color: #9B9B9B;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+header .categorias a.activo {
+	color: #000;
+}
+
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+    margin-top: 15%;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+/* ------------------------- */
+/* Overlay: VENTANA EMERGENTE AL DAR CLICK A LA IMAGEN */
+/* ------------------------- */
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.9);
+	width: 100%;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    z-index: 40;
+}
+
+.overlay.activo {
+	display: flex;
+}
+
+.overlay img {
+	max-width: 100%;
+}
+
+.overlay .descripcion {
+	display: block;
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+    font-size: large;
+	margin-top: 5px;
+	border-radius: 10px;
+	max-width: 50%;
+}
+/* ------------------------- */
+
+.contenedor-img {
+	position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+	background: none;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+/*
+footer .redes-sociales {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #000;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s ease all;
+}
+
+footer .redes-sociales .twitter {background: #1da1f2;}
+footer .redes-sociales .facebook {background: #3b5998;}
+footer .redes-sociales .instagram {background: #c13584;}
+
+footer .redes-sociales a i {
+	font-size: 20px;
+	line-height: 60px;
+}
+*/
+
+footer .contenedor-icono:hover a {
+	animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+footer .creado-por {
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #c13584;
+}
+
+footer .creado-por a {color: #000;}
+footer .creado-por a:hover {text-decoration: underline;}
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 700px) {
+	.grid .item {
+		width: calc(50% - 20px);
+	}
+
+	header .barra-busqueda {
+		width: 100%;
+	}
+}
+
+/* Menú Hamburguesa */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body{
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.hamburguer_header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+.icon__menu{
+    width: 0%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+}
+
+.menu__side{
+    width: 80px;
+    height: 100%;
+    background: #4775da;
+    position: fixed;
+    top: 0;
+    left: -10%;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #4775da;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.name__page{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name__page i{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.options__menu{
+    padding: 30px 70px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a{
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.options__menu a:hover{
+    color: white;
+}
+
+.options__menu .option{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .option i{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a.selected{
+    color: #fff;
+}
+
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 700%;
+    background: white;
+    position: absolute;
+    top: 20%;
+    left: -30px;
+}
+
+/*Clases para usar en JavaScript*/
+
+.body_move{
+    margin-left: 250px;
+}
+
+.menu__side_move{
+    margin-left: 160px;
+    width: 250px;
+}
+
+
+@media screen and (max-width: 760px){
+    .body_move{
+        margin-left: 250px;
+    }
+
+    .menu__side_move{
+        width: 80px;
+        left: -80px;
+    }
+}

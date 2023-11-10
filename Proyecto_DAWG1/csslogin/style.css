@@ -1,0 +1,54 @@
+
+input[type="text"],input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+
+}
+
+.bienvenida{
+    margin-left: 50%;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #4775da;
+}
+
+.boton{
+    border: none;
+    width: 100%;
+    color: white;
+    background-color: #4775da;
+    font-size: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background: rgba(45, 122, 45, 0.808);
+}
+
+.link{
+    text-decoration: none;
+    color: #4775da;
+    font-weight: 600;
+}
+
+.link:hover{
+    color: purple;
+}
+
+@media(min-width:768px){
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+#registrar{
+    padding: 5%;
+}
